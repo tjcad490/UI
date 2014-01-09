@@ -1,0 +1,77 @@
+﻿<html>
+<head>
+    <title>应用商店</title>
+
+    <script src="esayui/jquery.min.js"></script>
+    <script src="esayui/jquery.easyui.min.js"></script>
+    <script src="esayui/easyui-lang-zh_CN.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="esayui/themes/default/easyui.css" rel="stylesheet" />
+    <link href="esayui/themes/icon.css" rel="stylesheet" />
+    <script type="text/javascript">
+        var _menus = {
+            "menus": [
+                {
+                    "menuid": "1", "menuname": "应用",
+                    "l_menus": [{ "menuname": "热门" },
+                        { "menuname": "推荐" },
+                        { "menuname": "合集" },
+                        { "menuname": "教育" },
+                        { "menuname": "商业工具" },
+                        { "menuname": "社交通讯" },
+                        { "menuname": "生活时尚" }
+                    ]
+                }, {
+                    "menuid": "2", "menuname": "扩展程序",
+                    "l_menus": [{ "menuname": "博客" },
+                        { "menuname": "购物" },
+                        { "menuname": "辅助功能" },
+                        { "menuname": "开发者工具" }
+
+                     ]
+                }, {
+                    "menuid": "3", "menuname": "主题背景",
+                    "l_menus": [{ "menuname": "Google产品" },
+                        { "menuname": "艺术家作品" }
+                    ]
+                }
+            ]
+        };
+        var text = "";
+        $(function click1() {
+            $.each(_menus.menus, function (i, n) {
+                $.each(n.l_menus,function(j,o){text+="<li><div><a href='#'>"+o.menuname+"</a></div></li>";})
+                $('.easyui-accordion').accordion('add', {
+                    title: n.menuname,
+                    iconCls:'icon-sys',
+                    content: "<ul>" + text + "<ul>",
+                    selected:false
+                });
+                text = "";
+            })
+
+            $('.easyui-accordion li a').click(function () {
+                $('.easyui-accordion li div').removeClass("selected");
+                $(this).parent().addClass("selected");
+            }).hover(function () {
+                $(this).parent().addClass("hover");
+            }, function () {
+                $(this).parent().removeClass("hover");
+            });
+
+            $('.easyui-accordion').accordion();
+        })
+    </script>
+</head>
+<body class="easyui-layout" style="overflow-y: hidden"  scroll="no">
+    
+    <div data-options="region:'west',split:true" title="应用类型" style="width:180px">
+    <div class="easyui-accordion" fit="true" border="false">
+        <!--左侧菜单栏-->
+    </div>
+    </div>
+    <div data-options="region:'center',split:true" title="应用商店" style="overflow:hidden ">
+        <iframe name="appindex"  src="appindex.html" style="width:100%;height:100%;float:left"></iframe>
+    </div>
+</body>
+</html>

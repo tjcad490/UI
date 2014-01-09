@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">  
+    <link rel="stylesheet" href="css/myweb.css">                    
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        function sysrequest(url, btn) {
+            var tit = btn.value;
+            parent.create(url, tit);
+        }
+    </script>
+</head>
+<body>
+    <div class="col-md-12" style="padding-bottom:10px">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active" style="background-color:#808080">
+                <div style="text-align:center"><img src="images/item1.jpg" alt="pic1" style="opacity:0.7" /></div>
+                <div class="carousel-caption">
+                    <h3>Goggle Drive</h3>
+                    在一个位置创建、存储您的所有资料。
+                </div>
+            </div>
+            <div class="item" style="background-color:#808080">
+                <div style="text-align:center"><img src="images/item2.jpg" alt="pic2" style="opacity:0.7"/></div>
+                <div class="carousel-caption">
+                    <h3>Goggle Drive</h3>
+                    在一个位置创建、存储您的所有资料。
+                </div>
+            </div>
+            <div class="item" style="background-color:#808080">
+                <div style="text-align:center"><img src="images/item3.jpg" alt="pic3" style="opacity:0.7"/></div>
+                <div class="carousel-caption">
+                    <h3>Goggle Drive</h3>
+                    在一个位置创建、存储您的所有资料。
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon-chevron-left"></span>
+        </a> 
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon-chevron-right"></span>
+        </a> 
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="panel panel-info">
+        <div class="panel-heading">任务列表</div>
+        <div class="panel-body">
+            <ur class="list-group">
+                <li class="list-group-item">
+                <span class="badge">11</span>
+                    系统消息
+                </li>
+                <li class="list-group-item">
+                <span class="badge">5</span>
+                    我的任务
+                </li>
+                <li class="list-group-item">
+                <span class="badge">3</span>
+                    要求任务
+                </li>
+                <li class="list-group-item">
+                <span class="badge">3</span>
+                    要求任务
+                </li>
+                <li class="list-group-item">
+                <span class="badge">3</span>
+                    要求任务
+                </li>
+            </ur>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="panel panel-info">
+        <div class="panel-heading">我的应用</div>
+        <div class="panel-body">
+            <ul class="media-list">
+                <li class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="images/app1.gif" />
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Media heading1</h4>
+                    this my app1.
+                </div>
+                </li>
+                <li class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="images/app2.gif" />
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Media heading2</h4>
+                    this my app2.
+                </div>
+                </li>
+                <li class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="images/app3.gif" />
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Media heading3</h4>
+                    this my app3.
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-2">
+        <div class="panel panel-info" >
+            <div class="panel-heading">系统选单</div>
+            <div class="panel-body">
+                <input type="button" onclick="sysrequest('System.html',this)" value="后台管理"></input>
+                <input type="button" onclick="sysrequest('Appstore.html',this)"  value="应用浏览"></input>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

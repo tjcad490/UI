@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="gb2312">
+    <meta name="description" content="应用商店">
+    <title>应用商店</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">  
+    <link rel="stylesheet" href="css/myweb.css">                    
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/fenikso.js"></script>
+  </head>
+  <body>
+    <header>
+    <!--<div class="container" >
+	<div class="panel panel-default" id="menupanel">
+	<div class="panel-body" id="topmenu">
+	<div class="col-md-2">
+	<img src="image/logo.png" alt="应用商店">
+	<span id="menuspan"><span class="label label-info">应用商店</span>	</span>
+	</div>
+
+	<div class="col-md-2 pull-right" id="logon" >
+	  <span>欢迎你</span>
+	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+	  <span class="glyphicon glyphicon-cog"></span>
+	  </button>
+	  <ul class="dropdown-menu">
+          <li><a href="#">个人信息</a></li>
+          <li><a href="#">账户管理</a></li>
+          <li><a href="#">返回首页</a></li>
+	    <li class="divider"></li>
+          <li><a href="#">注销登录</a></li>
+        </ul>
+	</div><!-- /col-md-right
+      <div class="col-md-4 pull-right">
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">应用搜索				</button>
+          </span>
+        </div><!-- /input-group
+      </div><!-- /col-md-4
+	</div>
+	</div>
+    </div>-->
+    
+    </header>
+    
+
+<!--    <div class="container" style="padding:0;">
+
+      <div class="col-md-2" id="leftnav">
+          <input type="button" value="click" onclick="click()" />
+	    <ul class="nav nav-pills nav-stacked">
+  	      <li><a data-toggle="collapse" data-parent="#leftnav" href="#collapseOne" ><strong>应用</strong></a></li>
+            <ul id="collapseOne" class="nav nav-pills nav-stacked collapse in">
+                <li><a href="#" data-toggle="tab">热门</a></li>
+                <li><a href="#" data-toggle="tab">推荐</a></li>
+                <li><a href="#" data-toggle="tab">合集</a></li>
+		        <li><a href="#" data-toggle="tab">教育</a></li>
+		        <li><a href="#" data-toggle="tab">商业工具</a></li>
+		        <li><a href="#" data-toggle="tab">社交与通讯</a></li>
+		        <li><a href="#" data-toggle="tab">生活时尚</a></li>
+            </ul>
+  	      <li ><a data-toggle="collapse" data-parent="#leftnav" href="#collapseTwo" ><strong>扩展程序</strong></a></li>
+            <ul id="collapseTwo" class="nav nav-pills nav-stacked collapse">
+                <li><a href="#" data-toggle="tab">Google产品</a></li>
+                <li><a href="#" data-toggle="tab">博客</a></li>
+                <li><a href="#" data-toggle="tab">辅助功能</a></li>
+		        <li><a href="#" data-toggle="tab">购物</a></li>
+		        <li><a href="#" data-toggle="tab">开发者工具</a></li>
+            </ul>
+  	      <li ><a data-toggle="collapse" data-parent="#leftnav" href="#collapseThree" ><strong>主题背景</strong></a></li>
+            <ul id="collapseThree" class="nav nav-pills nav-stacked collapse">
+                <li><a href="#" data-toggle="tab">Google作品</a></li>
+                <li><a href="#" data-toggle="tab">艺术家作品</a></li>
+            </ul>
+	    </ul>
+	  </div>--><!-- /导航条-->
+  	  <div id="main">
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item1.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Google云端硬盘</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item2.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>美国赛车3D</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item3.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>ISO ball</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+          <div class="thumbnail col-md-3" style="text-align:center">
+              <div class="media-box">
+                  <img src="images/item4.jpg" alt="item1">
+              </div>
+              <div class="content-box">
+                  <h3>Homestyler</h3>
+                    <p>
+                        <time>2013-12-18</time>
+                        <span>作者</span>
+                    <a href="#" class="btn btn-mini" rel="popover" data-original-title="Google云端硬盘" data-content="在一个位置创建、存储您的所有资料" data-placement="top" data-trigger="hover"><i class="glyphicon glyphicon-list-alt"></i></a> 
+                    <a href="#" class="btn btn-mini" ><i class="glyphicon glyphicon-shopping-cart"></i></a> 
+                   </p>
+              </div>
+          </div>
+
+          <div class="col-md-12" id="mainfooter">
+              <ul class="pager">
+                <li class="previous"><a href="#">&larr; Older</a></li>
+                <li class="next"><a href="#">Newer &rarr;</a></li>
+              </ul>
+          </div>
+	  </div><!--/主页面  -->
+      <!--<div class="col-md-12" id="footer">
+          <span>&copy; 2013 应用商店</span>
+      </div>-->
+    
+  </body>
+</html>
